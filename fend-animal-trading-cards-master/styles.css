@@ -1,0 +1,24 @@
+/* add your CSS here */
+#card {
+  width: 300px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  padding: 5px 10px;
+  box-shadow: 5px 5px #d3d3d3;
+  font-family: sans-serif, Helvetica;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+#card ul, #card li {
+    margin: 0; padding: 0;
+}
+
+.info {
+  border: 1px solid #d3d3d3;
+  padding: 5px;
+}
