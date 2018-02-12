@@ -8,8 +8,9 @@ var suspect = "Mr. Parkes";
 var weapon = "";
 var solved = false;
 
-if (/* your conditional goes here */) {
-
+if (room === 'ballroom' && suspect === "Mr. Kalehoff") {
+    weapon = "poison";
+    solved = true;
 } else if (/* your conditional goes here */) {
 
 } else if (/* your conditional goes here */) {
