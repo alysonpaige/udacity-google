@@ -8,15 +8,18 @@ var suspect = "Mr. Parkes";
 var weapon = "";
 var solved = false;
 
-if (room === 'ballroom' && suspect === "Mr. Kalehoff") {
-    weapon = "poison";
-    solved = true;
-} else if (/* your conditional goes here */) {
-
-} else if (/* your conditional goes here */) {
-
+if (room === "ballroom" && suspect === "Mr. Kalehoff") {
+  weapon = "poison";
+  solved = true;
+} else if (room === "gallery" && suspect === "Ms. Van Cleve") {
+  weapon = "trophy";
+  solved = true;
+} else if (room === "billiards room" && suspect === "Mrs. Sparr") {
+  weapon = "pool stick";
+  solved = true;
 } else {
-
+  weapon = "knife";
+  solved = true;
 }
 
 if (solved) {
