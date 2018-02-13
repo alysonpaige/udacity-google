@@ -20,3 +20,19 @@ var eatsAnimals = true;
 var category = (eatsPlants && eatsAnimals ? "omnivore" : eatsPlants ? "herbivore" : eatsAnimals ? "carnivore" : undefined);
 
 console.log(category);
+
+////////////////////////////////
+// example as if/else statement
+if (eatsPlants) {
+    if (eatsAnimals) {
+        category = "omnivore";
+    } else {
+        category = "herbivore";
+    }
+} else {
+    if (eatsAnimals) {
+        category = "carnivore";
+    } else {
+        category = undefined;
+    }
+}
