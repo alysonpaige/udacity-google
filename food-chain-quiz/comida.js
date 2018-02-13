@@ -16,6 +16,7 @@
 var eatsPlants = false;
 var eatsAnimals = true;
 
-var category = /* your code goes here */
+// conditional ? (if condition is true) : (if condition is false)
+var category = (eatsPlants && eatsAnimals ? "omnivore" : eatsPlants ? "herbivore" : eatsAnimals ? "carnivore" : undefined);
 
 console.log(category);
