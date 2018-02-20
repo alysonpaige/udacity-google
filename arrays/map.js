@@ -19,11 +19,11 @@ var bills = [50.23, 19.12, 34.01,
     10.00, 99.22, 102.20, 100.10, 6.77, 2.22
 ];
 
-var totals = bills.map(function(x) {
-  // tip = 0.15 plus bill = 1.15 = 115%
-  x *= 1.15;
-  x = x.toFixed(2);
-  return Number(x);
+var totals = bills.map(function(bill) {
+  // tip = 0.15/15%, bill = 1.00/100%, tip+bill = 1.15/115%
+  var tipPlusTotalBill = 1.15;
+  bill *= tipPlusTotalBill;
+  return Number(bill.toFixed(2));
 })
 
 console.log(totals);
