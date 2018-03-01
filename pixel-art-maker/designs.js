@@ -1,19 +1,24 @@
 // Select color input
+var color = $('#colorPicker');
+
 // Select size input
+var gridTable = $('#pixelCanvas');
+var row = $('#inputHeight');
+var col = $('#inputWidth');
+var submit = $(':submit');
 
 // When size is submitted by the user, call makeGrid()
-
 function makeGrid() {
   // start with clean grid
-  // get dimensions
-  var x = $('#inputHeight').val();
-  var y = $('#inputWidth').val();
-  var color = $('#colorPicker').val();
-
-  console.log(x);
-  console.log(y);
-  console.log(color);
-
+  gridTable.remove();
+  // get dimensions from user input
+  $(document).ready(function() {
+    $('#sizePicker').click(function(e) {
+      e.preventDefault();
+      makeGrid();
+    })
+  })
+  // create grid
   for(var i=0; i <= x; i++) {
     var row = '<tr>';
     for (var i=0; i <= x; i++) {
@@ -24,16 +29,11 @@ function makeGrid() {
   }
 
 }
-
+});
 // grab button via ID and attach click event
-const $submitButton = $('#submitButton');
-
-$submitButton.click(function(e) {
+$('#submitButton').click(function(e) {
   e.preventDefault();
-  let $heightVal = $('#inputHeight').val();
-  let $widthVal = $('#inputWidth').val();
-
-  makeGrid($heightVal, $widthVal);
+  makeGrid;
 });
 
 /*
