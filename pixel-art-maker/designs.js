@@ -1,8 +1,6 @@
 var grid = $('#pixelCanvas');
 
 function makeGrid() {
-  // Select color input
-  var selectedColor = $('#colorPicker').val();
   // Select size input
   var height = $('#inputHeight').val();
   var width = $('#inputWidth').val();
@@ -24,16 +22,18 @@ $(document).ready(function() {
     e.preventDefault();
     makeGrid();
   });
+  // Select color input
+  var selectedColor = $('#colorPicker');
+  var color = selectedColor.val();
+  selectedColor.change(function() {
+    color = selectedColor.val();
+  })
   // apply color to cell when selected
   grid.click('td', function(e) {
-    $(this).css('background-color', selectedColor);
+    color = selectedColor.val();
+    $(e.target).css('background-color', color);
   });
 });
-// var selectedColor = $('#colorPicker');
-// var color = selectedColor.val();
-// selectedColor.change(function(){
-//   color = selectedColor.val();
-// });
 
 /*
 1. Define variables:
