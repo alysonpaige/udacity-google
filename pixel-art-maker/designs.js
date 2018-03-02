@@ -8,17 +8,16 @@ function makeGrid() {
   var width = $('#inputWidth').val();
   // start with clean grid
   grid.find('tr').remove();
-  // loop to create grid using size submitted by user
+  // nested loop to create grid using size submitted by user
   for (var y = 0; y < height; y++) {
     // append grid for height
     grid.append('<tr></tr>');
     for (var x = 0; x < width; x++) {
-      // append grid for width
+      // append grid for width based on last tr
       grid.find('tr:last').append('<td></td>');
     }
   }
 }
-
 // when user submits size via submit button/click event, call makeGrid()
 $(document).ready(function() {
   $('#sizePicker').submit(function(e) {
@@ -26,7 +25,7 @@ $(document).ready(function() {
     makeGrid();
   });
   // apply color to cell when selected
-  grid.on('click', 'td', function(e) {
+  grid.click('td', function(e) {
     $(this).css('background-color', selectedColor);
   });
 });
