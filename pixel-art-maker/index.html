@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pixel Art Maker!</title>
+    <title>Pixel Art Maker</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Aly's Lab:
-      <br>
-      Pixel Art Maker</h1>
-      <hr>
+    <h1>Aly's Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
@@ -18,13 +15,14 @@
         <input type="number" id="inputHeight" name="height" min="1" value="10">
         Grid Width:
         <input type="number" id="inputWidth" name="width" min="1" value="10">
-        <button type="submit" id="submitButton">Create Grid</button>
+        <button type="submit" id="submitButton">Create</button>
     </form>
 
-    <h2>Pick A Color</h2>
+    <h2>Select a color</h2>
     <input type="color" id="colorPicker">
 
-    <h2>Design Canvas</h2>
+    <h2>Design your canvas:</h2>
+    <br>
     <table id="pixelCanvas"></table>
     <script src="designs.js"></script>
 </body>
