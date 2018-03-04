@@ -34,6 +34,10 @@ $(document).ready(function() {
     $(e.target).css('background-color', color);
   });
 });
+// when button is hovered, add shadow
+$("button").hover(function() { 
+   $(this).toggleClass('shadowClass');
+});
 
 /*
 1. Define variables:
