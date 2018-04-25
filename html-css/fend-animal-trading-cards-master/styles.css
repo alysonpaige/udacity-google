@@ -1,5 +1,5 @@
 /* add your CSS here */
-#card {
+#container {
   width: 300px;
   border-width: 2px;
   border-style: solid;
@@ -10,6 +10,25 @@
   font-size: 12px;
 }
 
+p#interesting-fact {
+  font-style: italic;
+}
+
+li span {
+  font-weight: bold;
+}
+
+h1, img, .animal-info {
+  padding: .5em;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
 ul {
   list-style: none;
 }
@@ -18,7 +37,7 @@ ul {
     margin: 0; padding: 0;
 }
 
-.info {
+.animal-info {
   border: 1px solid #d3d3d3;
   padding: 5px;
 }
