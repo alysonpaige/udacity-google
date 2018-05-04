@@ -34,7 +34,7 @@ header, nav, footer, section, article, div {
 }
 
 .nav__item {
-  float: right;
+  float: left;
 }
 
 .nav__item a {
@@ -47,4 +47,8 @@ header, nav, footer, section, article, div {
 
 .nav__item a:hover {
   background-color: #111;
+}
+
+.nav__contact {
+  float: right;
 }
