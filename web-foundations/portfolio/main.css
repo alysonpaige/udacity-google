@@ -59,3 +59,8 @@ header, nav, footer, section, article, div {
 .nav__contact {
   float: right;
 }
+
+/* Contact */
+footer ul {
+  list-style-type: none;
+}
