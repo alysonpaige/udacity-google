@@ -60,6 +60,16 @@ header, nav, footer, section, article, div {
   float: right;
 }
 
+/* Header */
+header {
+  text-align: center;
+}
+
+/* Main sections */
+.all {
+  text-align: center;
+}
+
 /* Contact */
 footer ul {
   list-style-type: none;
