@@ -74,6 +74,17 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.header__title {
+  letter-spacing: 8px;
+  font-size: 36px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* Main sections */
