@@ -173,3 +173,23 @@ h2 {
   font-size: 35px;
   transition: all .1s ease;
 }
+
+/* Media queries */
+
+@media screen and (max-width: 900px) {
+  .box {
+    float: none;
+    display: block;
+    width: 90%;
+  }
+
+  .img__hidemobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .img__hidedesktop {
+    display: none;
+  }
+}
