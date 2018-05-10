@@ -67,9 +67,10 @@ header, nav, footer, section, article, div {
 }
 
 .nav__item a:hover {
+  border-bottom: solid 2px white;
   background-color: #111;
-  /* text-decoration: underline; */
   font-weight: bold;
+  padding-bottom: 12px;
 }
 
 /* Header */
@@ -104,9 +105,9 @@ header {
 }
 
 /* Main sections */
-.all {
+/* .all {
   text-align: center;
-}
+} */
 
 .description {
   width: 95%;
@@ -146,6 +147,7 @@ h2 {
 	background-color: #202020;
   padding-top: 20px;
   color: white;
+  text-align: center;
 }
 
 .contact-info {
