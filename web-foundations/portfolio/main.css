@@ -16,7 +16,6 @@ body, html {
 body {
   font-family: 'Source Sans Pro';
   font-weight: 100;
-  color: white;
 }
 
 h1, h2, h3, h4, h5 {
@@ -81,6 +80,11 @@ header {
 .header__title {
   letter-spacing: 8px;
   font-size: 36px;
+  color: white;
+}
+
+.header__desc {
+  color: white;
 }
 
 .uppercase {
@@ -97,8 +101,31 @@ header {
   margin-top: 30px;
 }
 
+.box {
+  float: left;
+  width: 42.5%;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+.full-width {
+  width: 100%;
+}
+
 /* Contact */
 footer ul {
   list-style-type: none;
   text-align: center;
+}
+
+.fas, .fab {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.fas:hover, .fab:hover {
+  color: #00ECB9;
+  font-size: 35px;
+  transition: all .1s ease;
 }
