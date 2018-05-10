@@ -97,7 +97,7 @@ header {
 }
 
 .description {
-  width: 50%;
+  width: 95%;
   margin-top: 30px;
 }
 
@@ -110,6 +110,14 @@ header {
 
 .full-width {
   width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+h2 {
+  text-align: center;
 }
 
 /* Contact */
