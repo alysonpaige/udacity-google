@@ -116,24 +116,46 @@ header {
 	clear: both;
 }
 
+.separator {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+    width: 250px;
+}
+
 h2 {
   text-align: center;
+  font-size: 28px;
 }
 
 /* Contact */
-footer ul {
-  list-style-type: none;
-  text-align: center;
+.contactme {
+	height: 250px;
+	background-color: #202020;
+  padding-top: 20px;
+  color: white;
+}
+
+.contact-info {
+	color: white;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+.contact-link {
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
 }
 
 .fas, .fab {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 30px;
 }
 
 .fas:hover, .fab:hover {
-  color: #00ECB9;
+  color: white;
   font-size: 35px;
   transition: all .1s ease;
 }
