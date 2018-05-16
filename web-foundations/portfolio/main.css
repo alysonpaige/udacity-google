@@ -31,7 +31,6 @@ header, nav, footer, section, article, div {
 }
 
 /* Nav */
-
 .nav ul {
 	width: 100%;
   margin-left:auto;
@@ -76,7 +75,7 @@ header, nav, footer, section, article, div {
 /* Header */
 header {
   text-align: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./images/bg.jpg') no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./images/bg1400.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 700px;
 }
@@ -132,8 +131,8 @@ header {
 .separator {
 	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
-    width: 250px;
+  border: 0;
+  width: 250px;
 }
 
 h2 {
@@ -175,7 +174,6 @@ h2 {
 }
 
 /* Media queries */
-
 @media screen and (max-width: 900px) {
   .box {
     float: none;
