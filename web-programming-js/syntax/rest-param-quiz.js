@@ -2,8 +2,6 @@
  * Programming Quiz: Using the Rest Parameter (1-5)
  */
 
-// sum of numbers divided by their length
-
 function average(...nums) {
   let total = 0;
   for (let num of nums) {
